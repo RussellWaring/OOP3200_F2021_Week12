@@ -43,7 +43,7 @@ public class Line
     // Constructors
     Line()
     {
-        set(new Vector2D.zero(), )
+        set(Vector2D.zero(), Vector2D.zero());
     }
 
     Line(Vector2D start, Vector2D end)

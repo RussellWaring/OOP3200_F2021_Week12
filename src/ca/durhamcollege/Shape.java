@@ -58,6 +58,29 @@ public abstract class Shape
         // vert 2 to vert 0 <- special case
     }
 
+    public String toString()
+    {
+        String outputString = "";
+        outputString += "------------------------------\n";
+        outputString += "Vertices: \n";
+        outputString += "------------------------------\n";
+        for (var vertex: vertices)
+        {
+            outputString += vertex.toString() + "\n";
+        }
+
+        outputString += "\n------------------------------\n";
+        outputString += "Edges: \n";
+        outputString += "------------------------------\n";
+        for (var edge: edges)
+        {
+            outputString += edge.toString() + "\n";
+        }
+
+
+        return outputString;
+    }
+
     // PUBLIC METHODS
 
 }

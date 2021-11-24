@@ -52,7 +52,14 @@ public class Line
         set(start, end);
     }
 
+    // Private Methods
 
+    // Public Methods
+    @Override
+    public String toString()
+    {
+        return "start: " + getStart().toString() + " end: " + getEnd().toString() + " length: " + getLength();
+    }
 
 
 }

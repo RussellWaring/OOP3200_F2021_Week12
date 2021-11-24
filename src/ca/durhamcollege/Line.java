@@ -38,6 +38,7 @@ public class Line
     {
         return Vector2D.distance(getStart(), getEnd()); // now a convenience function
     }
+    // alt syntax: public float getLength() {  return Vector2D.distance(getStart(), getEnd()); }
 
 
     // Constructors

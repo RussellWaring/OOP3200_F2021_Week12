@@ -49,7 +49,7 @@ public abstract class Shape
             }
             else
             {
-
+                this.edges.add(new Line(this.vertices.get(i), this.vertices.get(0)));
             }
         }
 

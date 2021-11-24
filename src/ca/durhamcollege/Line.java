@@ -34,6 +34,7 @@ public class Line
         setEnd(end);
     }
 
+    // computed property - never holding the value, it's computed
     public float getLength() // getting rid of setter makes it a READ ONLY property
     {
         return Vector2D.distance(getStart(), getEnd()); // now a convenience function
@@ -42,12 +43,12 @@ public class Line
 
 
     // Constructors
-    Line()
+    public Line()
     {
         set(Vector2D.zero(), Vector2D.zero());
     }
 
-    Line(Vector2D start, Vector2D end)
+    public Line(Vector2D start, Vector2D end)
     {
         set(start, end);
     }

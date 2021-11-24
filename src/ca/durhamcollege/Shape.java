@@ -77,7 +77,6 @@ public abstract class Shape
             outputString += edge.toString() + "\n";
         }
 
-
         return outputString;
     }
 

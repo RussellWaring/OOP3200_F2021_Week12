@@ -47,7 +47,7 @@ public class Circle extends Shape
 
     public float getArea()
     {
-        return (float) Math.pow(Math.PI * radius, 2);
+        return (float) (Math.PI * Math.pow(radius, 2));
     }
 
     // ==========Constructors

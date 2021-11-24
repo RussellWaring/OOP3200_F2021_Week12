@@ -14,7 +14,7 @@ public class Triangle extends Shape
      * @param p2 the second point
      * @param p3 the third point
      */
-    Triangle(Vector2D p1, Vector2D p2, Vector2D p3)
+    Triangle(Vector2D p1, Vector2D p2, Vector2D p3) throws Exception
     {
         super();
         setVertices(p1, p2, p3);

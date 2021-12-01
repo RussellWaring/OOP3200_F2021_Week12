@@ -6,13 +6,12 @@
  */
 package ca.durhamcollege;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public abstract class Shape
+public abstract class Shape implements Drawable, Updatable, HasArea
 {
-    // PRIVATE INSTANCE VARIABLES
-    private ArrayList<Vector2D> vertices;
+    // PRIVATE INSTANCE VARIABLES (composition)
+    private ArrayList<Vector2D> vertices; // using Vector2D class & line class to compose shapes
     private ArrayList<Line> edges;
 
 
@@ -28,6 +27,12 @@ public abstract class Shape
         // vertices.add(vertex);
         Vector2D[] vertices = {vertex};
         build(vertices);
+    }
+
+    // Private / Protected Properties
+    protected ArrayList<Vector2D> getVertices()
+    {
+        return vertices;
     }
 
     // ==========CONSTRUCTORS
@@ -97,7 +102,7 @@ public abstract class Shape
             outputString += vertex.toString() + "\n";
         }
 
-        outputString += "\n------------------------------\n";
+        outputString += "------------------------------\n";
         outputString += "Edges: \n";
         outputString += "------------------------------\n";
         for (var edge: edges)

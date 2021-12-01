@@ -8,6 +8,10 @@ package ca.durhamcollege;
 
 public class Triangle extends Shape
 {
+    // Private Instance Members
+
+    // Constructors
+
     /**
      * Constructs a Triangle with three points (p1, p2, p3)
      * @param p1 the first point
@@ -41,7 +45,26 @@ public class Triangle extends Shape
 
     }
 
-    // ==========Properties
+    // ==========Public Properties
+
+    @Override
+    public float getArea()
+    {
+        Vector2D A = getVertices().get(0);
+        //System.out.println("DEBUG: " + A);
+
+        Vector2D B = getVertices().get(1);
+        Vector2D C = getVertices().get(2);
+        var firstTerm = A.getX() * (B.getY() - C.getY());
+        //System.out.println("DEBUG: " + firstTerm);
+        var secondTerm = B.getX() * (C.getY() - A.getY());
+        var thirdTerm = C.getX() * (A.getY() - B.getY());
+
+        return Math.abs((firstTerm + secondTerm + thirdTerm)/2);
+    }
+
+    // ==========Private Methods
+    // ==========Public Methods
 
     /**
      * Sets the values of the Vertices of the Triangle.
@@ -65,5 +88,27 @@ public class Triangle extends Shape
         }
     }
 
+    public String toString()
+    {
+        String outputString = "";
+        outputString += "------------------------------\n";
+        outputString += "Triangle\n";
+        outputString += super.toString();
+        outputString += "------------------------------\n";
+        //outputString += "Perimeter     : " + getPerimeter() + "\n";
+        outputString += "Area          : " + getArea() + "\n";
+        return outputString;
+    }
 
+    @Override
+    public void Draw()
+    {
+        System.out.println("Now Drawing Triangle!");
+    }
+
+    @Override
+    public void Update()
+    {
+
+    }
 }

@@ -1,8 +1,8 @@
 /** Circle.java
  * @author  Russell Waring
- * @file    OOP3200 - Week 11p2, Java - Classes & Objects (continued)
- * @date    November 24nd, 2021
- * @description     Created while following along in class of week 11. Extension of shape class
+ * @file    OOP3200 - Week 12, Java - Packages and Access Control
+ * @date    December 1st, 2021
+ * @description     Building off lesson from week 11. Following along with week 12p2.
  */
 package ca.durhamcollege;
 

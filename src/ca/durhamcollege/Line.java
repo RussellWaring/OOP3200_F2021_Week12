@@ -1,3 +1,9 @@
+/**
+ * @author  Russell Waring
+ * @file    OOP3200 - Week 12, Java - Packages and Access Control
+ * @date    December 1st, 2021
+ * @description     Building off lesson from week 11. Following along with week 12p2.
+ */
 package ca.durhamcollege;
 
 public class Line
